@@ -1,7 +1,7 @@
 export const productos = [
-    {slug: 'Taladro Perforador', name: 'Producto 1', description: 'Descripción del producto 1', price: 10.99},
-    {slug: 'Serrucho', name: 'Producto 2', description: 'Descripción del producto 2', price: 15.99},
-    {slug: '', name: 'Producto 3', description: 'Descripción del producto 3', price: 20.99},
-    {slug: 'producto-4', name: 'Producto 4', description: 'Descripción del producto 4', price: 25.99},
-    {slug: 'producto-5', name: 'Producto 5', description: 'Descripción del producto 5', price: 30.99},
+    {slug: 'producto-1', name: 'Taladro Perforador', description: 'Herramienta eléctrica o inalámbrica que combina el movimiento de rotación normal con un golpe o percusión axial (hacia adelante y atrás)', price: 254.99},
+    {slug: 'producto-2', name: 'Serrucho', description: 'Herramienta para cortar materiales, especialmente madera', price: 15.99},
+    {slug: 'producto-3', name: 'Martillo', description: 'Herramienta de impacto para golpear clavos o romper materiales', price: 20.99},
+    {slug: 'producto-4', name: 'Cinta de Medir', description: 'Herramienta para medir distancias y dimensiones', price: 25.99},
+    {slug: 'producto-5', name: 'Lápiz', description: 'Herramienta de escritura con grafito', price: 30.99},
 ];
