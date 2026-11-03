@@ -25,12 +25,10 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-900 text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link href="/" className="text-xl font-bold">
           IKOMI
         </Link>
 
-        {/* Menú desktop */}
         <ul className="hidden md:flex gap-6">
           {links.map((link) => (
             <li key={link.href}>
@@ -48,7 +46,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Botón hamburguesa (mobile) */}
         <button
           className="md:hidden text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -58,7 +55,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Menú mobile */}
       {menuOpen && (
         <ul className="md:hidden bg-blue-800 px-4 pb-4 flex flex-col gap-3">
           {links.map((link) => (
