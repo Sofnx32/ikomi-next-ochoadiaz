@@ -7,8 +7,8 @@ import Footer from '@/app/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'IKOMI Perú - Soluciones Industriales',
-  description: 'Sitio corporativo de IKOMI Perú',
+  title: 'IKOMI Perú - Herramientas & Maquinaria',
+  description: 'Sitio corporativo oficial de IKOMI Perú',
 };
 
 export default function RootLayout({
