@@ -1,8 +1,9 @@
 import Link from 'next/link';
 
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
+// Se declara fuera del componente para que se evalúe de forma estática en tiempo de build
+const currentYear = new Date().getFullYear();
 
+export default function Footer() {
   const enlaces = [
     { href: '/nosotros', label: 'Nosotros' },
     { href: '/servicios', label: 'Servicios' },
@@ -15,8 +16,6 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-300 mt-auto border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          {/* Columna 1: Marca */}
           <div>
             <h3 className="text-white text-xl font-bold mb-4">IKOMI PERÚ</h3>
             <p className="text-sm leading-relaxed text-slate-400">
@@ -24,7 +23,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Columna 2: Enlaces rápidos */}
           <div>
             <h4 className="text-white font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2 text-sm">
@@ -41,7 +39,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Columna 3: Contacto */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-sm text-slate-400">
