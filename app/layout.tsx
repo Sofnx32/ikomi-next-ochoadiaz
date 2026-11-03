@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 
+const inter = Inter({ subsets: ['latin'] });
+
 export const metadata: Metadata = {
-  title: 'IKOMI Perú',
+  title: 'IKOMI Perú - Soluciones Industriales',
   description: 'Sitio corporativo de IKOMI Perú',
 };
 
@@ -14,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+    <html lang="es" className={inter.className}>
+      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
